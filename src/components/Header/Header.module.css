@@ -1,0 +1,106 @@
+.container{
+    height: 100px;
+    display: flex;
+    padding: 0 40px;
+    border-bottom: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.rightContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdownContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.loginContainer{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    color: #013168;
+    border: 1px solid #013168;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    color: #ffff;
+    background-color: #013168;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.drawerToggle {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .container{
+        height: 100px;
+        display: flex;
+        padding: 0 10px;
+        border-bottom: 1px solid #e6e6e6;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    .dropdownContainer{
+        display: none;
+    }
+    .logo{
+        width: 50px;
+    }
+    .drawerToggle {
+        width: 28px;
+        height: 40px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 10px 10px 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        /* margin: auto; */
+        /* margin-right: 100px; */
+    }
+    
+    .drawerToggle div {
+        width: 90%;
+        height: 2px;
+        /* background-color: white; */
+        background-color: black;
+    }
+
+    .rightContainer{
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

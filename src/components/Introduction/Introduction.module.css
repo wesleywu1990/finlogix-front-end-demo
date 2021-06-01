@@ -1,0 +1,82 @@
+.container{
+    width: 100%;
+    padding: 160px 80px 140px 80px;
+    box-sizing: border-box;
+}
+
+.introduction{
+    /* width: 482px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.textFields{
+    max-width: 482px;
+    padding-right: 40px;
+}
+
+.title{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #01254F;
+    margin-bottom: 20px;
+}
+
+.content{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 20px;
+}
+
+.more{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.videoContainer{
+
+}
+
+.video{
+    width: 580px;
+    height: 338px;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .container{
+        padding: 60px 20px 80px 20px;
+    }
+    .introduction{
+        display: flex;
+        flex-direction: column;
+    }
+    .textFields{
+        padding-right: 0;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+    .videoContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .video{
+        /* width: 280px;
+        height: 338px; */
+        width: 300px;
+    }
+}

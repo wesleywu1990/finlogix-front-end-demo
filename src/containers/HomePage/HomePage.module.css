@@ -1,0 +1,45 @@
+.introduce{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #01254F;
+    margin-top: 80px;
+}
+
+.content{
+    max-width: 800px;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.65);
+    margin-top: 20px;
+    margin-bottom: 88px;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .content{
+        max-width: 300px;
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.65);
+        margin-top: 20px;
+        margin-bottom: 88px;
+    }
+}
