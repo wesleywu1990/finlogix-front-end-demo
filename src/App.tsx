@@ -19,7 +19,7 @@ function App(props:any) {
     if(localStorage.getItem('token')){
       axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('token');
       getUserInfo().then((res) => {
-        props.updateUserInfo(res.data.user);
+        props.updateUserInfo(res?.data.user);
       })
     }
   }, [])

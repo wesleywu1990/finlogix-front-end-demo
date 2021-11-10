@@ -8,7 +8,7 @@ const FavoritePostPage = (props:any) => {
   const [list, setList] = React.useState([]);
   React.useEffect(() => {
     getFavoritePost(props.info.id).then((res) => {
-      setList(res.data.data);
+      setList(res?.data?.data);
     }).catch((err) => {
       console.log(err)
     })

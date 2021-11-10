@@ -16,10 +16,10 @@ const LoginPage = (props:any) => {
     login(account, password).then((res) => {
       console.log(res)
       props.closeModal();
-      if(res.data) {
-        localStorage.setItem('token', res.data.token);
-        axios.defaults.headers.common['Authorization'] = 'Bearer ' + res.data.token;
-        props.updateUserInfo(res.data.user);
+      if(res?.data) {
+        localStorage.setItem('token', res?.data.token);
+        axios.defaults.headers.common['Authorization'] = 'Bearer ' + res?.data.token;
+        props.updateUserInfo(res?.data.user);
         history.push('/');
       }
     }).catch((err) => {

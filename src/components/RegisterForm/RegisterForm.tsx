@@ -29,9 +29,9 @@ const RegisterForm = (props:any) => {
   React.useEffect(() => {
     setLoading(true);
     getPostList(props.pageNumber).then((res) => {
-      if(props.pageNumber === res.data.meta.pagination.total_pages) setHasMore(false)
+      if(props.pageNumber === res?.data.meta.pagination.total_pages) setHasMore(false)
       const tempArr = [] as any;
-      res.data.data.forEach((item:any) => {
+      res?.data?.data.forEach((item:any) => {
         if(!item.favourited) tempArr.push(item)
       });
       let updateOptions = props.list.concat(tempArr);
